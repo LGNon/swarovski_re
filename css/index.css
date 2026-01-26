@@ -286,6 +286,17 @@ ul, li {
     font-size: 16px;
     line-height: 1.5;
     word-break: keep-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 보여줄 줄 수: 2줄 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    /* 2줄의 높이만큼 최대 높이 제한 (line-height 24px * 2) */
+    max-height: 48px; 
+    
+    /* 말 줄임표가 잘 작동하도록 word-break 변경 */
+    word-break: break-all;
     text-shadow: 0 1px 5px rgba(0,0,0,0.5);
     margin: 0;
 }

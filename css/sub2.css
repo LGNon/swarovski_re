@@ -47,11 +47,9 @@ button {
   margin-top: 5px;
   border: 1px solid #111;
   transition: background 0.3s;
+  cursor: pointer;
 }
-.btn_login a {
-  display: block;
-  width: 100%;
-}
+
 .btn_login:hover {
   background-color: #ccc;
   color: #333;
@@ -90,20 +88,19 @@ span:hover {
 }
 
 .mem_wrap .mem_btn {
+  display: block;
   width: 100%;
+  line-height: 50px;
   max-width: 600px;
   margin: 250px auto 0;
   height: 50px;
   background-color: #fff;
   border: 1px solid #111;
   font-weight: bold;
+  border-radius: 5px;
   transition: background 0.3s;
 }
-.mem_wrap .mem_btn a {
-  display: block;
-  width: 100%;
-  line-height: 50px;
-}
+
 .mem_wrap .mem_btn:hover {
   background-color: #111;
   color: #fff;

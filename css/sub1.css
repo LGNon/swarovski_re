@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import url(reset2.css);
+@import url("reset2.css");
 
 .wrap_title { 
   font-size: 32px; text-align: center; margin: 30px;
@@ -130,7 +130,7 @@
     width: 70%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    margin-bottom: 0 auto 10px;
+    margin: 0 auto 10px;
     display: block;
 }
 
@@ -183,7 +183,6 @@
 
 .more_btn:hover {
   background-color: #111;
-  border-color: #111;
   color: #fff;
   font-weight: bold;
 }
