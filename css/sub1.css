@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+@import url(reset2.css);
+
+.wrap_title { 
+  font-size: 32px; text-align: center; margin: 30px;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  overflow: hidden;
+  height: 135px;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.banner_txt {
+  margin: 0 auto;
+  padding: 20px 30px;
+  background-color: #E4F2FB;
+  line-height: 1.2em;
+}
+
+.filter_wrapper {
+  width: 100%;
+}
+
+.filter_wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* 기존 li 스타일 유지 */
+.filter_wrapper ul li {
+  height: 24px;
+  line-height: 24px;
+  position: relative; /* 탭메뉴 위치의 기준점 */
+  cursor: pointer;
+}
+
+.filter_wrapper ul li .arrow_btn1 { margin-left: 10px; } 
+.filter_wrapper ul li .arrow_btn2 { margin-right: 10px; } 
+
+/* --- 새로 추가된 탭메뉴 스타일 --- */
+
+.tab_menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  width: 190px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 10;
+  list-style: none;
+  padding: 5px 0;
+  flex-direction: column; /* 가로 배열 방지 */
+}
+
+/* 첫 번째 li의 메뉴는 왼쪽 정렬, 두 번째는 오른쪽 정렬 */
+.filter_wrapper > ul > li:first-child .tab_menu { left: 0; }
+.filter_wrapper > ul > li:last-child .tab_menu { right: 0; }
+
+.tab_menu li {
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab_menu li:hover { background-color: #f0f0f0; }
+
+/* 체크 아이콘 스타일 */
+.check_icon {
+  width: 14px;
+  display: none; /* 기본 숨김 */
+}
+
+/* active 클래스가 붙은 항목의 체크 아이콘만 보임 */
+.tab_menu li.active .check_icon {
+  display: block;
+}
+
+/* 테스트용: 부모 li에 'on' 클래스가 붙으면 메뉴가 보임 */
+.filter_wrapper > ul > li.on .tab_menu {
+  display: block;
+}
+
+#wrapper {
+  background-color: #E4F2FB;
+  padding: 10px 30px;
+}
+
+.item_wrap {
+  margin-bottom: 20px;
+}
+
+.item_wrap > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px 0; 
+    list-style: none;
+    padding: 0;
+}
+
+.item_wrap > ul > li {
+  width: 49%;
+}
+
+.item_card {
+    width: 100%;
+    padding-top: 20px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.item_card img {
+    background: #fff;
+    width: 70%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: 0 auto 10px;
+    display: block;
+}
+
+.item_card figcaption {
+  padding: 30px 10px 20px 20px;
+  width: 100%;
+}
+
+.item_tit {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    word-break: keep-all;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #222;
+}
+
+.item_pir {
+    font-size: 16px;
+    color: #333;
+}
+
+.promotion_wrap {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.promotion_wrap .prm_img img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.promotion_wrap .caption {
+  padding: 30px;
+  text-align: center;
+}
+
+.promotion_wrap .cap_txt { margin: 10px 0; }
+
+.more_btn {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.more_btn:hover {
+  background-color: #111;
+  border-color: #111;
+  color: #fff;
+  font-weight: bold;
+}

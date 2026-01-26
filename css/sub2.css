@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+@import url("reset2.css");
+
+input, button {
+  border: none;
+}
+
+#wrapper {
+  margin: 50px 30px;
+}
+
+.login_title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.login_wrap {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: none;
+}
+
+.login_wrap input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 1px solid #999;
+  text-indent: 1em;
+}
+
+button {
+  width: 100%;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.btn_login {
+  color: #fff;
+  background-color: #111;
+  margin-top: 5px;
+  border: 1px solid #111;
+  transition: background 0.3s;
+}
+.btn_login a {
+  display: block;
+  width: 100%;
+}
+.btn_login:hover {
+  background-color: #ccc;
+  color: #333;
+  font-weight: bold;
+}
+
+.list {
+  width: 100%;
+  margin: 30px auto;
+  padding-bottom: 20px;
+  max-width: 600px;
+  border-bottom: 1px solid #ccc;
+}
+
+.list li {
+  margin: 15px 0;
+  line-height: 24px;
+  background: url(../images/check.png) no-repeat left center;
+  padding-left: 30px;
+}
+
+span {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+span:hover {
+  text-decoration: underline;
+}
+
+.mem_wrap{
+  text-align: center;
+}
+
+.mem_wrap .mem_btn {
+  width: 100%;
+  max-width: 600px;
+  margin: 250px auto 0;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #111;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.mem_wrap .mem_btn a {
+  display: block;
+  width: 100%;
+  line-height: 50px;
+}
+.mem_wrap .mem_btn:hover {
+  background-color: #111;
+  color: #fff;
+}

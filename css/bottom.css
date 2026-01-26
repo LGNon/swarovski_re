@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* ============ bottom_wrap =============== */
+.bottom_wrap {
+    background: #222;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 0.8rem;
+}
+
+.fnb {
+    margin-bottom: 30px;
+}
+
+.fnb li {
+    padding: 30px;
+    border-bottom: 1px solid #444;
+}
+
+.fnb li a {
+    font-weight: bold;
+    color: #fff;
+}
+
+.sns {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.sns img {
+    width: 24px;
+}
+
+.bottom_wrap p {
+    color: #888;
+    line-height: 1.6;
+    word-break: break-all;
+    text-align: justify;
+}
+
+.bottom_wrap p span { 
+    text-decoration: underline;
+    cursor: pointer;
+}

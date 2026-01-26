@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+@import url("reset2.css");
+
+#wrapper {
+  margin: 0 30px;
+}
+
+.membership {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.membership h2 {
+  font-size: 24px;
+  font-weight: 480;
+  margin-top: 20px;
+  text-indent: 10px;
+}
+
+
+.mem_card {
+  margin: 20px auto;
+    display: flex;
+    align-items: center;
+    background-color: #ededed;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.mem_img {
+    width: 40%;
+    margin-right: 15px;
+    background-color: #99c2f2;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mem_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mem_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.lev_tit {
+    font-size: 13px;
+    color: #666;
+    margin: 0 0 5px 0;
+}
+
+.level {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 2px 0 0 0;
+}
+
+.boon {
+    margin-left: auto;
+}
+
+.boon a {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fff;
+    white-space: nowrap;
+}
+
+.boon a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.icon_menu_wrap {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.icon_card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-decoration: none;
+    color: #333;
+}
+
+.icon_card img {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.icon_card span {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.menu_list {
+  margin: 20px auto;
+}
+
+
+
+.menu_list > li {
+  border-bottom: 1px solid #ccc;
+  padding: 30px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-indent: 5px;
+}
+.menu_list li span {
+  display: block;
+
+}
+
+.menu_list li span.scs_tit{
+  font-size: 22px;
+  font-weight: 480;
+  margin-bottom: 10px;
+}
+
+.menu_list li span.scs_txt {
+  font-size: 14px;
+}
+
+.menu_list > li:first-child {
+  background: url(../images/ep_arrow-right.png) no-repeat right center;
+}
+
+.menu_list > li:nth-child(4) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.menu_list > li:last-child {
+  font-size: 14px;
+  color: #999;
+  border-bottom: none;
+}
+
+.menu_list > li ul {
+  margin-top: 10px;
+}
+
+.menu_list > li ul li {
+  padding: 10px 20px;
+  font-weight: normal;
+  font-size:16px;
+}
+
+.menu_list > li ul li:hover, .mem_out:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

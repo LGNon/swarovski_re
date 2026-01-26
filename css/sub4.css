@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+@import url("reset2.css");
+
+.hide {
+  display: none;
+}
+
+.mem_wrapper{
+  margin: 50px 30px;
+}
+
+#mem_title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px
+}
+
+.input_wrap {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input_wrap .input_text {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 1px solid #999;
+  text-indent: 1em;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+label {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.chk_input {
+  padding-left: 20px;
+}
+
+.chk_input label {
+  color: #666;
+}
+
+.checklist {
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto;
+
+}
+
+.list_inner {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.list_inner li {
+  padding: 15px 0;
+  border-bottom: 1px solid #666;
+}
+.list_inner li:last-child {
+  border: none;
+}
+
+.join_btn {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #111;
+  margin-top: 5px;
+  border: 1px solid #111;
+  transition: background 0.3s;
+}
+.join_btn a {
+  display: block;
+  width: 100%;
+}
+.join_btn:hover {
+  background-color: #ccc;
+  color: #333;
+  font-weight: bold;
+}

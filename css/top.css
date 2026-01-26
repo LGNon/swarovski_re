@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* ======= top_wrap ========== */
+.top_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background: #fff;
+    position: sticky; /* 상단 고정 */
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+.logo img {
+    height: 16px;
+    width: auto;
+}
+
+.header_icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header_icons .icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+}

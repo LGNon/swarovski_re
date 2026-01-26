@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+#menu_wrap {
+    background-color: #fff;
+    color: #333;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    right: -70%;/* js */
+    z-index: 99999;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 5px 0px #999;
+}
+.menu_close { position: absolute; right: 20px; top: 20px; }
+#gnb ul { 
+    margin-top: 30px;
+}
+#gnb ul li { line-height: 2.5em; padding: 20px; border-bottom: 1px solid #000; }
+#gnb ul li a { font-weight: bold; }/* 1단 선택a */
+#gnb ul li a.on { color: #5079B4; }/* 1단 기본a */
+#gnb ul li img { float: right; margin-top: 5px; }
+
+#gnb ul.login_btn {
+    margin: 10px 0 0 20px;
+}
+
+#gnb ul.login_btn li {
+    padding: 0 0 0 45px;
+    border-bottom: none;
+} 
+#gnb ul.login_btn li:first-child {
+    background: url(../images/uesr.png) no-repeat left center;
+}
+#gnb ul.login_btn li:last-child {
+    background: url(../images/my.png) no-repeat left center;
+}
+
+#gnb .submenu { display: none; margin-top: 10px; }
+#gnb .submenu li { text-indent: 1em;  line-height: 2em; border-bottom: none; padding: 0; }
+#gnb .submenu li a { font-weight: normal; font-size: 14px; color: #666; }/* 2단 기본 a */
+/* #gnb .submenu li a.selected { text-decoration: underline; }/* 2단 선택 a */
