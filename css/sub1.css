@@ -2,6 +2,10 @@
 
 @import url("reset2.css");
 
+#all_wrapper { background-color: #E4F2FB; }
+
+#wrapper { max-width: 800px; margin: 0 auto; }
+
 .wrap_title { 
   font-size: 32px; text-align: center; margin: 30px;
 }
@@ -33,6 +37,8 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* 기존 li 스타일 유지 */

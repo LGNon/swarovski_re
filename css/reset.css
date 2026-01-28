@@ -58,7 +58,7 @@ a {
     vertical-align:baseline;
     background:transparent;
     color: inherit;
-    text-align: none;
+    text-align: 0;
 }
 
 /* change colours to suit your needs */
