@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+:root {
+    --swiper-theme-color: #111;
+}
+
+html,
+body {
+    position: relative;
+}
+
 /* reset */
 * {
     box-sizing: border-box;
@@ -14,6 +23,7 @@ body {
     color: #111;
     line-height: 1.4;
     overflow-x: hidden; /* 가로 스크롤 방지 */
+    
 }
 
 body, select, input {
@@ -131,81 +141,55 @@ ul, li {
 
 /* =========== all_wrap ============ */
 
+#all_wrap {
+    max-width: 800px;
+    margin: 0 auto;
+} 
+
 #all_wrap section {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 50px 20px;
+    margin: 30px 0;
 }
 
 /* ===== new_section ======== */
-.new_container {
-    overflow: hidden;
-}
-
-.new_item_inner {
-    display: flex;
-    width: 400%;
-    transition: margin-left 0.4s ease;
-    user-select: none;
-    -webkit-user-drag: none;
-    touch-action: pan-y; 
-}
-
-.new_item_inner .item_sec {
-    width: 100vw;
-    padding-right: 40px; 
-    box-sizing: border-box; 
-    flex-shrink: 0;
-    
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-/* 공통 아이템 카드 스타일 */
-.item_card {
-    width: 48%; /* 모바일 2열 배치 */
+.new_title {
+    font-size: 32px;
+    color: #000;
     text-align: center;
-    height: auto;
-    cursor: pointer;
-    margin: 0;
+    margin-top: 50px;
 }
 
-.item_card img {
-    background: #f7f7f7;
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    margin-bottom: 10px;
-    display: block;
-    /* 드래그 방지 */
-    -webkit-user-drag: none; 
+
+.newItem_wrapper {
+    margin: 0 20px;
+    max-width: 800px;
+    height: 30rem;
+    background-color: #fff;
 }
 
-.item_tit {
+.item_slide {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 5px;
-    color: #222;
-    /* 말줄임 처리 */
     word-break: keep-all;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.item_pir {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
+.item_card {
+    min-width: 180px;
+    text-align: center;
 }
 
-.new_container .item_card {
-    margin-bottom: 0;
-    height: auto; 
-}
-
-.new_container .page_pointer {
-    margin-top: 20px;
+.item_slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* =========== category_wrapper =========== */
@@ -452,55 +436,65 @@ ul, li {
 }
 
 /* ========== news_wrapper ============ */
+
+.news_title {
+    font-size: 32px;
+    color: #000;
+    text-align: center;
+    margin: 50px 0;
+}
+
 .news_wrapper {
-    margin-top: 30px;
-    overflow: hidden;
-    padding-bottom: 30px !important;
+  margin: 0 30px;
 }
 
-.news_inner {
-    display: flex;
-    width: 300%;
-    transition: margin-left 0.3s;
-}
-
-.news_card {
-    width: 100vw;
-    padding-right: 40px;
-    flex-shrink: 0;
-    cursor: pointer;
-}
-
-.news_card img {
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-    margin-bottom: 15px;
-    -webkit-user-drag: none; 
-}
-
-.news_text strong {
-    display: block;
-    font-size: 1.1rem;
+.news_sec {
+  overflow: hidden;
+  font-size: 16px;
+    font-weight: 500;
+    word-break: keep-all;    
+    text-overflow: ellipsis;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.news_text p {
-    font-size: 0.9rem;
-    color: #555;
-    line-height: 1.5;
-    word-break: keep-all;
+.news_sec .news_text { 
+  text-align: left;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news_sec img {
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.news_sec figcaption {
+  max-width: 30rem;
+  margin: 20px auto;
+}
+
+.news_sec figcaption p {
+  padding: 10px 0;
 }
 
 /* =============== promotion_wrapper ================= */
+
 .promotion_wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #E4F2FB;
     margin: auto;
-    padding: 50px 0;
-
 }
 
 .prm_img_wrap {
