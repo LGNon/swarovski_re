@@ -56,17 +56,17 @@
         </li>
       </ul>
       <ul class="login_btn">
-        <li><a href="02_sub.html">로그인</a></li>
-        <li><a href="03_sub.html">마이페이지</a></li>
+        <li><a href="login.html">로그인</a></li>
+        <li><a href="mypage.html">마이페이지</a></li>
       </ul><!-- login_btn -->
     </nav><!-- gnb -->
   </div><!-- menu_wrap -->
 
   <div class="mem_wrapper">
     <h1 id="mem_title">회원가입</h1>
-    <div class="input_wrap">
+    <form class="input_wrap" id="singupForm">
       <label for="u_id" class="hide">아이디 입력</label>
-      <input type="text" class="input_text" id="u_id" placeholder="아이디입력" required >
+      <input type="text" class="input_text" id="u_id" placeholder="아이디입력" required autofocus>
       <label for="u_pwd" class="hide">비밀번호 입력</label>
       <input type="password" class="input_text" id="u_pwd" placeholder="비밀번호 입력" required >
       <label for="u_pwdCheck" class="hide">비밀번호 확인</label>
@@ -75,14 +75,13 @@
         <input type="checkbox" class="checkbox" value="마케팅 수신에 동의합니다" id="marketing" required >
         <label for="marketing">마케팅 수신에 동의합니다.(선택)</label>
       </div>
-    </div><!-- input_wrap -->
-
-    <div class="checklist">
-      <ul class="all_ch_wrapper">
-        <li>
-          <input type="checkbox" class="checkbox" id="all_check">
-          <label for="all_check">모두 동의합니다.</label>
-          <ul class="list_inner">
+      
+      <div class="checklist">
+        <ul class="all_ch_wrapper">
+          <li>
+            <input type="checkbox" class="checkbox" id="all_check">
+            <label for="all_check">모두 동의합니다.</label>
+            <ul class="list_inner">
             <li>
               <input type="checkbox" class="checkbox" id="list1" required>
               <label for="list1">개인정보 수집 및 이용 동의(필수)</label>
@@ -99,7 +98,8 @@
         </li>
       </ul><!-- all_ch_wrapper -->
     </div><!-- checklist -->
-    <button class="join_btn">가입하기</button>
+    <button type="submit" class="join_btn">가입하기</button>
+  </form><!-- input_wrap -->
   </div><!-- mem_wrapper -->
 
   <footer class="bottom_wrap">
