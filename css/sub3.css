@@ -179,3 +179,7 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+.menu_list button { border: none; background: none;; color: #333;  text-indent: -6px; }
+.menu_list #logoutButton { font-weight: bold;  font-size: 18px; }
+.menu_list button:hover { text-decoration: underline; cursor: pointer; }
