@@ -1,21 +1,36 @@
-# UI 구현 및 정보구조(AI) 명세서
+# 💎 스와로브스키 웹페이지 리디자인
 
-본 문서는 ...
+본 프로젝트는 기존 스와로브스키 모바일 웹사이트의 사용자 경험(UX)을 개선하고, 현대적인 UI 디자인과 인터렉티브한 기능을 추가하여 리뉴얼한 개인 포트폴리오 프로젝트입니다.
 
-## 1. 프로젝트 디렉토리 구조(Directory Tree)
+---
 
+## 🚀 프로젝트 개요
+* **목적**: 기존 모바일 웹의 레이아웃 개선 및 UI/UX 로직 고도화
+* **특징**: Swiper 라이브러리를 활용한 메인 비주얼, Lottie 애니메이션을 통한 인터렉티브 요소 구현
+* **배포 URL**: https://lgnon.github.io/swarovski_re/
+
+---
+
+## 🛠 기술 스택 (Tech Stack)
+* **Markup**: HTML5
+* **Styling**: CSS3 (Responsive Design)
+* **Scripting**: JavaScript, jQuery (1.8.3, 3.1.1, 4.0.0)
+* **Library**: 
+  * **Swiper.js**: 슬라이드 및 배너 구현
+  * **Lottie.js**: 고품질 웹 애니메이션 효과 적용
+
+---
+
+## 📂 프로젝트 구조 (Project Structure)
 
 ```
-프로젝트명 : SWAROVSKI(리뉴얼)
+09_UI구현
 ├─ 01_sub-bre.html
 ├─ 01_sub-ear.html
 ├─ 01_sub-gift.html
 ├─ 01_sub-neck.html
 ├─ 01_sub-new.html
 ├─ 01_sub-ring.html
-├─ 02_sub.html
-├─ 03_sub.html
-├─ 04_sub.html
 ├─ css
 │  ├─ bottom.css
 │  ├─ index.css
@@ -130,25 +145,41 @@
 │  ├─ uesr.png
 │  └─ youtube.png
 ├─ index.html
-└─ js
-   ├─ index.js
-   ├─ jquery-1.8.3.min.js
-   ├─ jquery-3.1.1.min.js
-   ├─ jquery-4.0.0.min.js
-   ├─ menu.js
-   ├─ scrollbar.js
-   ├─ sub4.js
-   └─ sub_filter.js
+├─ js
+│  ├─ index.js
+│  ├─ jquery-1.8.3.min.js
+│  ├─ jquery-3.1.1.min.js
+│  ├─ jquery-4.0.0.min.js
+│  ├─ login.js
+│  ├─ menu.js
+│  ├─ scrollbar.js
+│  ├─ sub4.js
+│  └─ sub_filter.js
+├─ login.html
+├─ mypage.html
+└─ singup.html
 
 ```
-
-## 2. 정보 구조(AI) 및 기능 매핑
-| 파일/폴더명 | 정보 구조상 역할 | 주요 구현 기능 |
-
-## 3. 구조 설계 원칙
-* 자원 분리 : ~~HTML~~
-   - 1234<br>abcd
-   - 1234123
-- **직관적 위계* :
 ---
-[네이버](https://www.naver.com)
+
+## 💻 설치 및 실행 방법 (Installation)
+본 프로젝트는 별도의 빌드 과정 없이 정적 파일로 구성되어 있습니다.
+
+1. 저장소 복제: GitHub 저장소(https://github.com/LGNon/swarovski_re) 우측 상단의 'Code' 버튼을 눌러 주소를 복사한 뒤, 터미널에서 git clone 명령어를 사용하여 로컬 환경으로 복제하세요.
+2. 실행: index.html 파일을 브라우저에서 직접 열거나, VS Code의 Live Server 확장을 사용하여 로컬 서버 환경에서 실행하세요.
+
+---
+
+## 🔍 주요 기능 및 사용 방법 (Features & Usage)
+* **메인 비주얼**: Swiper.js를 활용한 반응형 슬라이드 및 프로모션 배너 구현
+* **네비게이션**: menu.js를 통한 모바일 최적화 GNB 및 사이드바 인터렉션
+* **상품 카테고리**: 브레이슬릿, 귀걸이, 목걸이 등 카테고리별 상세 서브 페이지 구성
+* **사용자 인터페이스**: 스크롤 애니메이션(scrollbar.js) 및 실시간 상품 필터링 시스템(sub_filter.js)
+* **인터렉티브 디자인**: Lottie를 활용하여 브랜드 아이덴티티를 강조한 애니메이션 배치
+
+---
+
+## 👤 제작자
+- **이름**: 이가온
+- **이메일:** amylee11120707@gmail.com
+- **GitHub:** @LGNon

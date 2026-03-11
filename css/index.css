@@ -524,7 +524,7 @@ ul, li {
 
 .promotion_wrapper .item_card {
     width: calc(50% - 5px);
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     text-align: center;
 }
 
